@@ -1,2 +1,2 @@
 662110198
-อะไรก็ได้มั้ง
+[Git](https://github.com/DII-camt/lab-PiengpienNiyata)
