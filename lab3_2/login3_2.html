@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้า Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btn-group-toggle .btn {
+            width: 100px;
+            margin: 5px;
+        }
+
+        .btn-active {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="login-container text-center">
+                <img src="https://www.cmu.ac.th/content/Article/2023/7e6d8808-54b5-419d-b3da-99de6cce26f4/047c25cb-dee0-494e-b462-4f28f9e51ffd.jpg"
+                    alt="cmu" class="img-fluid mx-auto d-block mb-3" width="150" height="150">
+                <h2 class="text-center">หน้า Login</h2>
+                <div class="btn-group btn-group-toggle" role="group">
+                    <button type="button" class="btn btn-secondary" id="homeButton">Home</button>
+                    <button type="button" class="btn btn-secondary" id="loginButton">Login</button>
+                </div>
+                <form action="/sendLogin" method="post">
+                    <div class="form-group">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="email" class="form-control" id="username" name="username" placeholder="Email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <button type="reset" class="btn btn-secondary btn-block">Reset</button>
+                    <a href="sign.html" class="btn btn-link btn-block">Sign In</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-5">
+        <iframe width="500" height="500" frameborder="0" scrolling="no"
+            src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=College%20of%20Arts%2C%20Media%20and%20Technology%2C%20Chiang%20Mai%20University%2C%20Chiang%20Mai%2050200&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            marginheight="0" marginwidth="0"></iframe>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('homeButton').addEventListener('click', function () {
+            this.classList.remove('btn-secondary');
+            this.classList.add('btn-danger');
+            document.getElementById('loginButton').classList.remove('btn-danger');
+            document.getElementById('loginButton').classList.add('btn-secondary');
+        });
+
+        document.getElementById('loginButton').addEventListener('click', function () {
+            this.classList.remove('btn-secondary');
+            this.classList.add('btn-danger');
+            document.getElementById('homeButton').classList.remove('btn-danger');
+            document.getElementById('homeButton').classList.add('btn-secondary');
+        });
+    </script>
+</body>
+
+</html>
