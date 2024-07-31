@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test.js"></script>
+</head>
+<body>
+    <button onclick="myFunction()">replace to good</button>
+<p id="demo"></p>
+<script>
+for(let i=0; i<100; i=i+1)
+{
+document.getElementById("demo").innerHTML =
+document.getElementById("demo").innerHTML + "I am bad.<br />";
+}
+function myFunction() {
+    let demo = document.getElementById("demo");
+    demo.innerHTML = demo.innerHTML.replace(/bad/g, "good");
+}
+</script>
+</body>
+</html>
