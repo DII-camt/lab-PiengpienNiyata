@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Set background color to black */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.display-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3/4 display, 1/4 C button */
+    margin-bottom: 10px;
+    grid-gap: 5px;
+}
+
+#display {
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f0f0f0; /* Display background color */
+}
+
+.button.c {
+    height: 50px;
+    font-size: 18px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: green; /* Green background for buttons */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.button {
+    background-color: green; /* Green background for buttons */
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0f0; /* Lighter green on hover */
+}
+
+.button:active {
+    transform: scale(0.95);
+}
