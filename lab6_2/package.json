@@ -1,17 +1,15 @@
 {
   "name": "lab6-2",
   "version": "1.0.0",
-  "description": "GOD SERVER",
   "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "GOD",
+  "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "express": "^4.19.2",
-    "mysql2": "^3.10.3"
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

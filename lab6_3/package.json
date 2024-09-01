@@ -1,0 +1,22 @@
+{
+  "name": "lab6-3",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "graphql": "^16.9.0",
+    "graphql-http": "^1.22.1",
+    "mariadb": "^3.3.1",
+    "ruru": "^2.0.0-beta.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
