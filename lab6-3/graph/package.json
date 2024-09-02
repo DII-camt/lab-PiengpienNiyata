@@ -1,0 +1,23 @@
+{
+  "name": "graph",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GOD",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "graph": "file:",
+    "graphql": "^16.9.0",
+    "graphql-http": "^1.22.1",
+    "mariadb": "^3.3.1",
+    "ruru": "^2.0.0-beta.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
